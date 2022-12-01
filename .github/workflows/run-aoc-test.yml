@@ -1,0 +1,13 @@
+name: Test AoC 2022
+on: [push]
+jobs:
+  Test-AoC-2022:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Checking out ${{ github.ref }} from ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Run python --version
+        run: python --version
+      - name: Run test
+        run: ./test.sh
