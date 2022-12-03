@@ -31,3 +31,5 @@ if __name__ == "__main__":
 EOF
 
 chmod +x "$DAY/$DAY.py"
+git add "$DAY/$DAY.py"
+git update-index --chmod=+x "$DAY/$DAY.py"
