@@ -1,5 +1,12 @@
 #!/bin/sh
 
+python -m pytest
+
+if [ "$?" != 0 ]; then
+    >&2 echo "pytest tests failed"
+    exit 1
+fi
+
 max=25
 
 for i in `seq 1 $max`; do
