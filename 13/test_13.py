@@ -1,7 +1,7 @@
 day13 = __import__("13")
 
 def test_day13_parse():
-    data = day13.process_input("13/input_test")
+    data = day13.process_input("13/sample")
     expected_data = [
         [
             [1,1,3,1,1],

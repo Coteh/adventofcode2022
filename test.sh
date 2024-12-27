@@ -13,15 +13,15 @@ for i in `seq 1 $max`; do
     val=`printf %02d $i`
     if [ -d "$val" ]; then
         echo "Testing Day $val test"
-        "./$val/$val.py" "./$val/input_test" | diff "$val/expected_test" -
+        "./$val/$val.py" "./$val/sample" | diff "$val/expected_sample" -
         if [ "$?" != 0 ]; then
             >&2 echo "Day $val test file failed"
             exit 1
         fi
-        for t in `seq 1 5`; do
-            if [ -f "$val/expected_test$t" ]; then
+        for t in `seq 2 6`; do
+            if [ -f "$val/expected_sample$t" ]; then
                 echo "Testing Day $val test $t"
-                "./$val/$val.py" "./$val/input_test$t" | diff "$val/expected_test$t" -
+                "./$val/$val.py" "./$val/sample$t" | diff "$val/expected_sample$t" -
                 if [ "$?" != 0 ]; then
                     >&2 echo "Day $val test file $t failed"
                     exit 1
