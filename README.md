@@ -8,6 +8,12 @@ Like last year, I wanted to pick a language I was familiar with and focus on the
 
 ## Running the Solutions
 
+First, [`pytest`](https://docs.pytest.org/en/stable/index.html) will need to be installed to run some of the tests:
+
+```sh
+pip install pytest
+```
+
 Each day is implemented in a separate file.
 
 You can run them like this:
