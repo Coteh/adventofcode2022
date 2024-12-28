@@ -64,4 +64,4 @@ To run the test suite:
 |  24  |        |        |
 |  25  |        |        |
 
-* I "cheated" for Day 11 Part 2 by looking at the subreddit for the technique that needed to be used to solve the problem. See the `NOTE` in `./11/11.py` for more details.
+\* I "cheated" for Day 11 Part 2 by looking at the subreddit for the technique that needed to be used to solve the problem. See the `NOTE` in `./11/11.py` for more details.
