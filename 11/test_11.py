@@ -1,7 +1,7 @@
 day11 = __import__("11")
 
 def test_day11_parse_single_monkey():
-    data = day11.process_input("11/sample_small")
+    data = day11.process_input("./data/2022/11/sample_small")
     assert len(data) == 1
     monkey = data[0]
     assert isinstance(monkey, day11.Monkey)
@@ -16,7 +16,7 @@ def test_day11_parse_single_monkey():
 
 
 def test_day11_parse_multiple_monkies():
-    data = day11.process_input("11/sample")
+    data = day11.process_input("./data/2022/11/sample")
     assert len(data) == 4
     i = 0
     for monkey in data:
@@ -76,7 +76,7 @@ def test_day11_monkey_test_false():
 
 
 def test_day11_monkey_throwing_one_round():
-    monkies = day11.process_input("11/sample")
+    monkies = day11.process_input("./data/2022/11/sample")
     assert len(monkies) == 4
     day11.process_monkey_throwing(monkies, 1)
     day11.print_round_stats(monkies, 1)

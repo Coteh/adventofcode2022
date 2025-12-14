@@ -11,6 +11,9 @@ jobs:
     
       - name: Check out repository code
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.DATA_PAT }}
+          submodules: recursive
     
       - name: Run python --version
         run: python --version

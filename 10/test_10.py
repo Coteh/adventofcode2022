@@ -1,7 +1,7 @@
 day10 = __import__("10")
 
 def test_day10_parse():
-    data = day10.process_input("10/sample_small")
+    data = day10.process_input("./data/2022/10/sample_small")
     assert len(data) == 3
     assert data[0] == ["noop"]
     assert data[1] == ["addx", "3"]
@@ -18,21 +18,21 @@ def test_day10_process_instructions():
 
 def test_day10_1_sample():
     cpu = day10.CPU()
-    instructions = day10.process_input("10/sample")
+    instructions = day10.process_input("./data/2022/10/sample")
     day10.process_instructions(cpu, instructions)
     assert cpu.signal_strength_sum == 13140
 
 
 def test_day10_1_input():
     cpu = day10.CPU()
-    instructions = day10.process_input("10/input")
+    instructions = day10.process_input("./data/2022/10/input")
     day10.process_instructions(cpu, instructions)
     assert cpu.signal_strength_sum == 12460
 
 
 def test_day10_2_sample():
     cpu = day10.CPU()
-    instructions = day10.process_input("10/sample")
+    instructions = day10.process_input("./data/2022/10/sample")
     day10.process_instructions(cpu, instructions)
     expected_lines = [
         "##..##..##..##..##..##..##..##..##..##..",
